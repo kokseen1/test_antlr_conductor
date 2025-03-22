@@ -33,3 +33,7 @@ corepack enable
 ```shell
 npm install --global rollup
 ```
+
+## Note
+
+Ensure parser source files are in nested `parser/src` and not simply `parser/` otherwise rollup's `typescript` module will have trouble resolving imports, especially on GitHub Actions.
