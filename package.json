@@ -8,7 +8,7 @@
   "scripts": {
     "build-conductor": "rollup -c rollup.config.js",
     "build": "rollup -c rollup.config.dev.js",
-    "generate-parser": "antlr4ng -Dlanguage=TypeScript -visitor -o src/parser src/SimpleLang.g4"
+    "generate-parser": "antlr4ng -Dlanguage=TypeScript -visitor -o src/parser/src src/SimpleLang.g4"
   },
   "repository": {
     "type": "git",
