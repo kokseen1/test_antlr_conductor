@@ -27,7 +27,7 @@ jobs:
         run: yarn install --immutable
 
       - name: yarn generate-parser
-        run: yarn generate-parser
+        run: yarn generate-parser-conductor
 
       - name: yarn build
         run: yarn build-conductor
