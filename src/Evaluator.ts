@@ -1,6 +1,6 @@
 import { CharStream, CommonTokenStream } from 'antlr4ng';
-import { SimpleLangLexer } from './parser/SimpleLangLexer';
-import { SimpleLangParser } from './parser/SimpleLangParser';
+import { SimpleLangLexer } from './parser/src/SimpleLangLexer';
+import { SimpleLangParser } from './parser/src/SimpleLangParser';
 import { SimpleLangEvaluatorVisitor } from './EvaluatorVisitor';
 
 export class SimpleLangEvaluator {

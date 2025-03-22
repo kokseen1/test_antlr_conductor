@@ -1,6 +1,6 @@
 import { AbstractParseTreeVisitor } from 'antlr4ng';
-import { ExpressionContext, ProgContext } from './parser/SimpleLangParser';
-import { SimpleLangVisitor } from './parser/SimpleLangVisitor';
+import { ExpressionContext, ProgContext } from './parser/src/SimpleLangParser';
+import { SimpleLangVisitor } from './parser/src/SimpleLangVisitor';
 
 export class SimpleLangEvaluatorVisitor extends AbstractParseTreeVisitor<number> implements SimpleLangVisitor<number> {
     // Visit a parse tree produced by SimpleLangParser#prog
