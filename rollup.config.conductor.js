@@ -3,7 +3,6 @@ import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-    treeshake: false,
     plugins: [nodeResolve(), typescript()],
     input: "src/ConductorCompatibleEvaluator.ts",
     output: {
