@@ -27,6 +27,7 @@ export class SimpleLangEvaluatorVisitor extends AbstractParseTreeVisitor<number>
                     case '+': return left + right;
                     case '-': return left - right;
                     case '*': return left * right;
+                    case '%': return left % right;
                     case '/':
                         if (right === 0) {
                             throw new Error("Division by zero");
