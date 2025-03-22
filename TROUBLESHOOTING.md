@@ -27,3 +27,9 @@ corepack enable
 4. Set `conductor.enable` to true and `conductor.evaluator.url` to the deployed `index.js` file URL
 
 ![](img/sa_feature_flags.png)
+
+## Install rollup
+
+```shell
+npm install --global rollup
+```
