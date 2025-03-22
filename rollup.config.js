@@ -8,7 +8,7 @@ export default {
     input: "src/SimpleLangEvaluator.ts",
     output: {
         dir: "dist",
-        format: "iife",
+        format: "esm",
         sourcemap: true,
     }
 }
