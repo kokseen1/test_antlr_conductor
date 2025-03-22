@@ -1,14 +1,14 @@
 import nodeResolve from "@rollup/plugin-node-resolve";
-// import terser from "@rollup/plugin-terser";
+import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-    treeshake: false,
     plugins: [nodeResolve(), typescript()],
-    input: "src/Evaluator.ts",
+    input: "src/ConductorCompatibleEvaluator.ts",
     output: {
+        plugins: [terser()],
         dir: "dist",
-        format: "esm",
+        format: "iife",
         sourcemap: true,
     }
 }
