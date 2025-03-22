@@ -1,5 +1,5 @@
-import { SimpleLangEvaluator } from './dist/SimpleLangEvaluator.js';
+import { SimpleLangEvaluator } from './dist/Evaluator.js';
 
 var evaluator = new SimpleLangEvaluator();
 
-evaluator.evaluateChunk("1 + 2");
+evaluator.evaluateChunk("11 % 3");
