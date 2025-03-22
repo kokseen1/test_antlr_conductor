@@ -6,9 +6,9 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build-conductor": "rollup -c",
-    "generate-parser": "antlr4ng -Dlanguage=TypeScript -visitor -o src/parser/src src/SimpleLang.g4",
-    "build": "rollup -c rollup.config.dev.js"
+    "build": "rollup -c rollup.config.js",
+    "build-conductor": "rollup -c rollup.config.conductor.js",
+    "generate-parser": "antlr4ng -Dlanguage=TypeScript -visitor -o src/parser src/SimpleLang.g4"
   },
   "repository": {
     "type": "git",
