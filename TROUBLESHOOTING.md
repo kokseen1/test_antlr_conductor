@@ -12,6 +12,15 @@ On elevated terminal:
 corepack enable
 ```
 
+## Getting started
+
+```shell
+yarn install
+yarn generate-parser
+yarn build
+node main.js
+```
+
 ## Importing `index.js` to sourceacademy playground
 
 1. Go to <https://sourceacademy.org/playground>
@@ -36,4 +45,4 @@ npm install --global rollup
 
 ## Note
 
-Ensure parser source files are in nested `parser/src` and not simply `parser/` otherwise rollup's `typescript` module will have trouble resolving imports, especially on GitHub Actions.
+When building for iife, rollup's `typescript` module thinks that parser source files are in `parser/src` and not `parser/`, so import statements need to follow accordingly.
